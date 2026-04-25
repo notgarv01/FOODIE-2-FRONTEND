@@ -1,0 +1,41 @@
+@import "tailwindcss";
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* --- Hide Number Input Arrows (Spinners) --- */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@keyframes premium-float-up {
+  0% { transform: translateY(10px) scale(0.9); opacity: 0; }
+  20% { transform: translateY(0) scale(1.05); opacity: 1; }
+  80% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-10px) scale(0.95); opacity: 0; }
+}
+
+.animate-premium-feedback {
+  animation: premium-float-up 1.2s ease-in-out forwards;
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
