@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Loader2, BarChart3, TrendingUp, TrendingDown, Calendar, DollarSign, Users, ShoppingCart } from 'lucide-react';
+import { API_URL } from '../../utils/api';
 
 const SalesView = () => {
   const [salesData, setSalesData] = useState([]);

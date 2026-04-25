@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Loader2, ShoppingBag } from 'lucide-react';
 import { TrendingUp, Video, Star } from 'lucide-react';
+import { API_URL } from '../../../utils/api';
 
 const Dashboard = () => {
   const [stats, setStats] = useState([]);
